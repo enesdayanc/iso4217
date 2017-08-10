@@ -2,7 +2,7 @@
 
 namespace Enesdayanc\Iso4217;
 
-use Data;
+use Enesdayanc\Iso4217\Data\Data;
 use Enesdayanc\Iso4217\Model\Country;
 use Enesdayanc\Iso4217\Model\Currency;
 
