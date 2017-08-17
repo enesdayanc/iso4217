@@ -1,12 +1,12 @@
 <?php
 
-namespace Enesdayanc\Iso4217;
+namespace Enesdayanc\ISO4217;
 
-use Enesdayanc\Iso4217\Data\Data;
-use Enesdayanc\Iso4217\Model\Country;
-use Enesdayanc\Iso4217\Model\Currency;
+use Enesdayanc\ISO4217\Data\Data;
+use Enesdayanc\ISO4217\Model\Country;
+use Enesdayanc\ISO4217\Model\Currency;
 
-class Iso4217
+class ISO4217
 {
     /**
      * @api

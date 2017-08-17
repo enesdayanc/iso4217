@@ -6,20 +6,20 @@
  * Time: 09:57
  */
 
-namespace Enesdayanc\Iso4217;
+namespace Enesdayanc\ISO4217;
 
-use Enesdayanc\Iso4217\Model\Currency;
+use Enesdayanc\ISO4217\Model\Currency;
 use OutOfBoundsException;
 use PHPUnit\Framework\TestCase;
 
-class Iso4217Test extends TestCase
+class ISO4217Test extends TestCase
 {
-    /** @var  Iso4217 $iso4217 */
+    /** @var  ISO4217 $iso4217 */
     protected $iso4217;
 
     public function setUp()
     {
-        $this->iso4217 = new Iso4217();
+        $this->iso4217 = new ISO4217();
     }
 
     public function testCanBeGetByCodeAlpha3()

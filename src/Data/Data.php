@@ -5,7 +5,7 @@
  * Date: 10/08/2017
  * Time: 09:30
  */
-namespace Enesdayanc\Iso4217\Data;
+namespace Enesdayanc\ISO4217\Data;
 
 class Data
 {

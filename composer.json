@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Enesdayanc\\Iso4217\\": "src/"
+      "Enesdayanc\\ISO4217\\": "src/"
     },
     "exclude-from-classmap": [
       "tests/"

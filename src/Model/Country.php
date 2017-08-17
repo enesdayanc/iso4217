@@ -1,6 +1,6 @@
 <?php
 
-namespace Enesdayanc\Iso4217\Model;
+namespace Enesdayanc\ISO4217\Model;
 
 class Country
 {
