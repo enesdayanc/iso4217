@@ -5,7 +5,7 @@
  * Date: 10/08/2017
  * Time: 09:30
  */
-namespace Enesdayanc\ISO4217\Data;
+namespace PaymentGateway\ISO4217\Data;
 
 class Data
 {

@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Enesdayanc\\ISO4217\\": "src/"
+      "PaymentGateway\\ISO4217\\": "src/"
     },
     "exclude-from-classmap": [
       "tests/"

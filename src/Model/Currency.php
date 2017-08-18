@@ -6,7 +6,7 @@
  * Time: 09:28
  */
 
-namespace Enesdayanc\ISO4217\Model;
+namespace PaymentGateway\ISO4217\Model;
 
 class Currency
 {

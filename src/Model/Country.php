@@ -1,6 +1,6 @@
 <?php
 
-namespace Enesdayanc\ISO4217\Model;
+namespace PaymentGateway\ISO4217\Model;
 
 class Country
 {

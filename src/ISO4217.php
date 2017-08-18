@@ -1,10 +1,10 @@
 <?php
 
-namespace Enesdayanc\ISO4217;
+namespace PaymentGateway\ISO4217;
 
-use Enesdayanc\ISO4217\Data\Data;
-use Enesdayanc\ISO4217\Model\Country;
-use Enesdayanc\ISO4217\Model\Currency;
+use PaymentGateway\ISO4217\Data\Data;
+use PaymentGateway\ISO4217\Model\Country;
+use PaymentGateway\ISO4217\Model\Currency;
 
 class ISO4217
 {

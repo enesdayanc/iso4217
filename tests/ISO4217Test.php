@@ -6,9 +6,9 @@
  * Time: 09:57
  */
 
-namespace Enesdayanc\ISO4217;
+namespace PaymentGateway\ISO4217;
 
-use Enesdayanc\ISO4217\Model\Currency;
+use PaymentGateway\ISO4217\Model\Currency;
 use OutOfBoundsException;
 use PHPUnit\Framework\TestCase;
 
