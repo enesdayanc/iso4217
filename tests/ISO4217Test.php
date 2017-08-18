@@ -14,6 +14,10 @@ use PHPUnit\Framework\TestCase;
 
 class ISO4217Test extends TestCase
 {
+    const CURRENCY_ALPHA3 = 'TRY';
+    const CURRENCY_NAME = 'Turkish Lira';
+    const CURRENCY_NUMERIC = '949';
+
     /** @var  ISO4217 $iso4217 */
     protected $iso4217;
 
@@ -24,23 +28,23 @@ class ISO4217Test extends TestCase
 
     public function testCanBeGetByCodeAlpha3()
     {
-        $response = $this->iso4217->getByCode('TRY');
+        $response = $this->iso4217->getByCode(self::CURRENCY_ALPHA3);
 
         $this->assertInstanceOf(Currency::class, $response);
-        $this->assertSame('TRY', $response->getAlpha3());
-        $this->assertSame('Turkish Lira', $response->getName());
-        $this->assertSame('949', $response->getNumeric());
+        $this->assertSame(self::CURRENCY_ALPHA3, $response->getAlpha3());
+        $this->assertSame(self::CURRENCY_NAME, $response->getName());
+        $this->assertSame(self::CURRENCY_NUMERIC, $response->getNumeric());
     }
 
 
     public function testCanBeGetByCodeNumeric()
     {
-        $response = $this->iso4217->getByCode('949');
+        $response = $this->iso4217->getByCode(self::CURRENCY_NUMERIC);
 
         $this->assertInstanceOf(Currency::class, $response);
-        $this->assertSame('TRY', $response->getAlpha3());
-        $this->assertSame('Turkish Lira', $response->getName());
-        $this->assertSame('949', $response->getNumeric());
+        $this->assertSame(self::CURRENCY_ALPHA3, $response->getAlpha3());
+        $this->assertSame(self::CURRENCY_NAME, $response->getName());
+        $this->assertSame(self::CURRENCY_NUMERIC, $response->getNumeric());
     }
 
     public function testCanBeGetByCodeAlpha3Error()
@@ -60,12 +64,12 @@ class ISO4217Test extends TestCase
 
     public function testCanBeGetByAlpha3()
     {
-        $response = $this->iso4217->getByAlpha3('TRY');
+        $response = $this->iso4217->getByAlpha3(self::CURRENCY_ALPHA3);
 
         $this->assertInstanceOf(Currency::class, $response);
-        $this->assertSame('TRY', $response->getAlpha3());
-        $this->assertSame('Turkish Lira', $response->getName());
-        $this->assertSame('949', $response->getNumeric());
+        $this->assertSame(self::CURRENCY_ALPHA3, $response->getAlpha3());
+        $this->assertSame(self::CURRENCY_NAME, $response->getName());
+        $this->assertSame(self::CURRENCY_NUMERIC, $response->getNumeric());
     }
 
     public function testCanBeGetByAlpha3Error()
@@ -78,12 +82,12 @@ class ISO4217Test extends TestCase
 
     public function testCanBeGetByNumeric()
     {
-        $response = $this->iso4217->getByNumeric('949');
+        $response = $this->iso4217->getByNumeric(self::CURRENCY_NUMERIC);
 
         $this->assertInstanceOf(Currency::class, $response);
-        $this->assertSame('TRY', $response->getAlpha3());
-        $this->assertSame('Turkish Lira', $response->getName());
-        $this->assertSame('949', $response->getNumeric());
+        $this->assertSame(self::CURRENCY_ALPHA3, $response->getAlpha3());
+        $this->assertSame(self::CURRENCY_NAME, $response->getName());
+        $this->assertSame(self::CURRENCY_NUMERIC, $response->getNumeric());
     }
 
     public function testCanBeGetByNumericError()
